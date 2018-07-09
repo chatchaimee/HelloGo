@@ -1,5 +1,6 @@
 package main
 
+// Importing a package which contains the Println function that we use to print
 import "fmt"
 
 const spanish = "Spanish"
