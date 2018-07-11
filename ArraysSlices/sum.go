@@ -16,3 +16,15 @@ func SumAll(numbersToSum ...[]int) []int {
 	}
 	return sums
 }
+
+func SumAllTails(numbersToSum ...[]int) []int {
+	sums := []int{}
+	for _, numbers := range numbersToSum {
+		// numbers[1] Result is x
+		// numbers[1:] is mean return value to array, result is [x]
+		tail := numbers[1:]
+		sums = append(sums, Sum(tail))
+	}
+
+	return sums
+}
